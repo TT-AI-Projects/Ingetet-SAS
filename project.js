@@ -29,18 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Cerrar menú móvil si está abierto
         if (window.innerWidth <= 900) {
+            const sidebar = document.querySelector('.sidebar');
             sidebar.classList.remove('active');
-            mobileMenuBtn.querySelector('i').classList.remove('fa-xmark');
-            mobileMenuBtn.querySelector('i').classList.add('fa-bars');
         }
-
-        // Disparar animaciones de reveal en la nueva página
-        setTimeout(() => {
-            observeRevealElements();
-        }, 100);
     };
 
-    // Eventos de navegación
+    // Eventos de navegación - Sidebar
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -49,48 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Eventos de navegación - Botones dentro del contenido
     pageButtons.forEach(btn => {
-        if (!btn.classList.contains('nav-links')) {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                const pageId = btn.getAttribute('data-page');
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const pageId = btn.getAttribute('data-page');
+            if (pageId) {
                 showPage(pageId);
-            });
-        }
+            }
+        });
     });
 
     // ==========================================
-    // 2. MENÚ MÓVIL
-    // ==========================================
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const sidebar = document.querySelector('.sidebar');
-    
-    mobileMenuBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('active');
-        const icon = mobileMenuBtn.querySelector('i');
-        if (sidebar.classList.contains('active')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-xmark');
-        } else {
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
-        }
-    });
-
-    // Cerrar menú al hacer clic fuera
-    document.addEventListener('click', (e) => {
-        if (window.innerWidth <= 900 && 
-            !sidebar.contains(e.target) && 
-            !mobileMenuBtn.contains(e.target) &&
-            sidebar.classList.contains('active')) {
-            sidebar.classList.remove('active');
-            mobileMenuBtn.querySelector('i').classList.remove('fa-xmark');
-            mobileMenuBtn.querySelector('i').classList.add('fa-bars');
-        }
-    });
-
-    // ==========================================
-    // 3. MODO OSCURO
+    // 2. MODO OSCURO
     // ==========================================
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = themeToggle.querySelector('i');
@@ -119,10 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
-    // 4. SCROLL REVEAL (ANIMACIONES DE ENTRADA)
+    // 3. ANIMACIONES DE ENTRADA (REVEAL)
     // ==========================================
     const observeRevealElements = () => {
-        const revealElements = document.querySelectorAll('.page.active .dashboard-card, .page.active .quick-card, .page.active .service-card, .page.active .step-card, .page.active .contact-item');
+        const revealElements = document.querySelectorAll('.page.active .dashboard-card, .page.active .quick-card, .page.active .service-card, .page.active .contact-item');
         
         revealElements.forEach((el, index) => {
             el.classList.add('reveal');
@@ -145,4 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // INICIALIZACIÓN
     // ==========================================
     observeRevealElements();
+    
+    // Mostrar página inicial
+    showPage('inicio');
 });

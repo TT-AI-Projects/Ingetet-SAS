@@ -9,46 +9,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
-    <!-- Partículas de fondo animadas -->
+    <!-- Partículas de fondo -->
     <div class="particles" aria-hidden="true">
         <span></span><span></span><span></span><span></span><span></span>
         <span></span><span></span><span></span><span></span><span></span>
     </div>
 
     <!-- Navegación Lateral -->
-<nav class="sidebar">
-    <div class="logo">
-        <img src="img/logo-ingetet.png" alt="Logo Ingetet SAS" onerror="this.style.display='none'; this.parentElement.innerHTML='<h2 style=\'color:var(--primary-green);font-size:1.5rem;\'>Ingetet SAS</h2>';">
-    </div>
-    
-    <ul class="nav-links">
-        <li><a href="#" data-page="inicio" class="active"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
-        <li><a href="#" data-page="objetivo"><i class="fa-solid fa-bullseye"></i> <span>Objetivo</span></a></li>
-        <li><a href="#" data-page="alcance"><i class="fa-solid fa-cloud"></i> <span>Alcance</span></a></li>
-        <li><a href="#" data-page="presupuesto"><i class="fa-solid fa-calculator"></i> <span>Presupuesto</span></a></li>
-        <li><a href="#" data-page="condiciones"><i class="fa-solid fa-file-contract"></i> <span>Condiciones</span></a></li>
-        <li><a href="#" data-page="contacto"><i class="fa-solid fa-envelope"></i> <span>Contacto</span></a></li>
-    </ul>
-    
-    <div class="sidebar-footer">
-        <a href="https://wa.me/573161772997" target="_blank" class="whatsapp-btn">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span>WhatsApp</span>
-        </a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-            <i class="fa-solid fa-moon"></i>
-        </button>
-    </div>
-</nav>
-
-    <!-- Botón menú móvil -->
-    <button class="mobile-menu-btn" id="mobileMenuBtn">
-        <i class="fa-solid fa-bars"></i>
-    </button>
+    <nav class="sidebar">
+        <div class="logo">
+            <img src="img/logo-ingetet.png" alt="Logo Ingetet SAS" onerror="this.style.display='none'; this.parentElement.innerHTML='<h2 style=\'color:var(--primary-green);font-size:1.5rem;\'>Ingetet SAS</h2>';">
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#" data-page="inicio" class="active"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
+            <li><a href="#" data-page="objetivo"><i class="fa-solid fa-bullseye"></i> <span>Objetivo</span></a></li>
+            <li><a href="#" data-page="alcance"><i class="fa-solid fa-cloud"></i> <span>Alcance</span></a></li>
+            <li><a href="#" data-page="presupuesto"><i class="fa-solid fa-calculator"></i> <span>Presupuesto</span></a></li>
+            <li><a href="#" data-page="condiciones"><i class="fa-solid fa-file-contract"></i> <span>Condiciones</span></a></li>
+            <li><a href="#" data-page="contacto"><i class="fa-solid fa-envelope"></i> <span>Contacto</span></a></li>
+        </ul>
+        
+        <div class="sidebar-footer">
+            <a href="https://wa.me/573135310180" target="_blank" class="whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+            
+            <!-- Iconos de contacto en horizontal (4 iconos) -->
+            <div class="contact-icons">
+                <a href="https://www.ingetet.com" target="_blank" class="icon-btn" title="Sitio Web">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+                <a href="https://www.tittanium.co/contactus" target="_blank" class="icon-btn" title="Contacto">
+                    <i class="fa-solid fa-address-card"></i>
+                </a>
+                <a href="https://tittanium-sas.github.io/Portafolio/" target="_blank" class="icon-btn" title="Portafolio">
+                    <i class="fa-solid fa-briefcase"></i>
+                </a>
+                <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Modo Oscuro/Claro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
     <!-- Contenido Principal -->
     <main class="main-content">
@@ -73,6 +80,34 @@
                 </div>
             </div>
 
+            <!-- Certificaciones Azure -->
+            <div class="certificaciones-section">
+                <h3 class="certificaciones-title">Certificaciones Microsoft Azure</h3>
+                <div class="certificaciones-grid">
+                    <div class="cert-item">
+                        <img src="img/cert1.png" alt="Azure Fundamentals" class="cert-img" onerror="this.parentElement.style.display='none'">
+                    </div>
+                    <div class="cert-item">
+                        <img src="img/cert2.png" alt="Azure Administrator" class="cert-img" onerror="this.parentElement.style.display='none'">
+                    </div>
+                    <div class="cert-item">
+                        <img src="img/cert3.png" alt="Azure Solutions Architect" class="cert-img" onerror="this.parentElement.style.display='none'">
+                    </div>
+                    <div class="cert-item">
+                        <img src="img/cert4.png" alt="Azure Developer" class="cert-img" onerror="this.parentElement.style.display='none'">
+                    </div>
+                    <div class="cert-item">
+                        <img src="img/cert5.png" alt="Azure Security Engineer" class="cert-img" onerror="this.parentElement.style.display='none'">
+                    </div>
+                    <div class="cert-item">
+                        <img src="img/cert6.png" alt="Azure DevOps Engineer" class="cert-img" onerror="this.parentElement.style.display='none'">
+                    </div>
+                    <div class="cert-item">
+                        <img src="img/cert7.png" alt="Azure Data Engineer" class="cert-img" onerror="this.parentElement.style.display='none'">
+                    </div>
+                </div>
+            </div>
+
             <!-- Tarjetas rápidas de acceso -->
             <div class="quick-access-grid">
                 <a href="#" class="dashboard-card quick-card" data-page="alcance">
@@ -80,15 +115,15 @@
                     <h3>Alcance Técnico</h3>
                     <p>Arquitectura moderna en Azure</p>
                 </a>
-                <a href="#" class="dashboard-card quick-card" data-page="proceso">
-                    <i class="fa-solid fa-diagram-project"></i>
-                    <h3>Proceso</h3>
-                    <p>5 pasos de implementación</p>
-                </a>
-                <a href="#" class="dashboard-card quick-card" data-page="planes">
+                <a href="#" class="dashboard-card quick-card" data-page="presupuesto">
                     <i class="fa-solid fa-tags"></i>
-                    <h3>Planes</h3>
-                    <p>Servicios recurrentes</p>
+                    <h3>Presupuesto</h3>
+                    <p>Planes de servicio recurrentes</p>
+                </a>
+                <a href="#" class="dashboard-card quick-card" data-page="condiciones">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <h3>Condiciones</h3>
+                    <p>Términos y condiciones</p>
                 </a>
             </div>
         </section>
@@ -123,7 +158,7 @@
             </div>
         </section>
 
-        <!-- PÁGINA: Alcance Técnico -->
+        <!-- PÁGINA: Alcance -->
         <section id="alcance" class="page">
             <div class="page-header">
                 <h2><i class="fa-solid fa-cloud"></i> Alcance Técnico</h2>
@@ -131,7 +166,6 @@
             </div>
             
             <div class="services-grid">
-                <!-- Tarjeta: Infraestructura de Cómputo -->
                 <div class="dashboard-card service-card">
                     <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80');">
                         <div class="service-image-overlay"></div>
@@ -140,7 +174,6 @@
                         <i class="fa-solid fa-server icon-green"></i>
                         <h3>Infraestructura de Cómputo</h3>
                     </div>
-                    <p>App Server con Azure Virtual Machines para aplicaciones empresariales.</p>
                     <ul class="feature-list">
                         <li><i class="fa-solid fa-check-circle"></i> <strong>Servicio:</strong> Azure Virtual Machines (Serie D o E)</li>
                         <li><i class="fa-solid fa-check-circle"></i> <strong>OS Destino:</strong> Windows Server 2022/2025</li>
@@ -149,7 +182,6 @@
                     </ul>
                 </div>
 
-                <!-- Tarjeta: Opción A IaaS -->
                 <div class="dashboard-card service-card">
                     <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80');">
                         <div class="service-image-overlay"></div>
@@ -158,16 +190,13 @@
                         <i class="fa-solid fa-database icon-green"></i>
                         <h3>Capa de Datos - Opción A (IaaS)</h3>
                     </div>
-                    <p>SQL Server on Azure VM con control total del sistema operativo.</p>
                     <ul class="feature-list">
                         <li><i class="fa-solid fa-check-circle"></i> <strong>Servicio:</strong> SQL Server on Azure VM</li>
                         <li><i class="fa-solid fa-check-circle"></i> <strong>Control total</strong> del Sistema Operativo</li>
                         <li><i class="fa-solid fa-check-circle"></i> <strong>Configuración</strong> personalizada de base de datos</li>
-                        <li><i class="fa-solid fa-check-circle"></i> <strong>Ideal para:</strong> Cargas de trabajo tradicionales</li>
                     </ul>
                 </div>
 
-                <!-- Tarjeta: Opción B PaaS -->
                 <div class="dashboard-card service-card">
                     <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80');">
                         <div class="service-image-overlay"></div>
@@ -176,81 +205,27 @@
                         <i class="fa-solid fa-cloud icon-green"></i>
                         <h3>Capa de Datos - Opción B (PaaS)</h3>
                     </div>
-                    <p>Azure SQL Database como servicio administrado con máxima escalabilidad.</p>
                     <ul class="feature-list">
                         <li><i class="fa-solid fa-check-circle"></i> <strong>Servicio:</strong> Azure SQL Database</li>
                         <li><i class="fa-solid fa-check-circle"></i> <strong>Servicio administrado</strong> por Microsoft</li>
                         <li><i class="fa-solid fa-check-circle"></i> <strong>Modelos:</strong> Serverless o Provisioned</li>
-                        <li><i class="fa-solid fa-check-circle"></i> <strong>Escalabilidad</strong> automática y alta disponibilidad</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Imagen de Arquitectura -->
             <div class="dashboard-card">
                 <h2><i class="fa-solid fa-sitemap"></i> Arquitectura de Referencia</h2>
                 <p class="section-desc">Solución basada en servicios de Microsoft Azure que garantiza un entorno robusto, seguro y gestionable.</p>
                 <div class="img-container">
-                    <img src="img/img1.png" alt="Arquitectura de Referencia Azure" class="project-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'cert-placeholder\'><i class=\'fa-solid fa-sitemap\'></i><p>Coloca aquí la imagen de arquitectura (img/img1.png)</p></div>';">
+                    <img src="img/img1.png" alt="Arquitectura de Referencia Azure" class="project-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'cert-placeholder\'><i class=\'fa-solid fa-sitemap\'></i><p>Arquitectura Azure - Imagen no disponible</p></div>';">
                 </div>
             </div>
         </section>
 
-        <!-- PÁGINA: Proceso -->
-        <section id="proceso" class="page">
-            <div class="page-header">
-                <h2><i class="fa-solid fa-diagram-project"></i> Proceso de Desarrollo en Microsoft Azure</h2>
-                <p class="section-desc">Metodología de 5 pasos para garantizar el éxito del proyecto.</p>
-            </div>
-
-            <div class="dashboard-card">
-                <div class="steps-grid">
-                    <div class="step-card">
-                        <div class="step-number">01</div>
-                        <div class="step-icon"><i class="fa-solid fa-clipboard-list"></i></div>
-                        <h3>Descripción</h3>
-                        <p>Se realiza toda la contextualización del requerimiento y la descripción del proyecto.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">02</div>
-                        <div class="step-icon"><i class="fa-solid fa-calculator"></i></div>
-                        <h3>Costos Cloud</h3>
-                        <p>Descripción de los recursos en nube necesarios y los costos mensuales de los mismos.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">03</div>
-                        <div class="step-icon"><i class="fa-solid fa-lightbulb"></i></div>
-                        <h3>Solución</h3>
-                        <p>Se plantea una solución a partir de la descripción, utilizando servicios cloud o soluciones híbridas.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">04</div>
-                        <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
-                        <h3>Despliegue Inicial</h3>
-                        <p>Oferta de servicios profesionales para puesta en marcha en bolsas de horas.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">05</div>
-                        <div class="step-icon"><i class="fa-solid fa-chart-line"></i></div>
-                        <h3>Mejora Continua</h3>
-                        <p>Seguimiento mensual para optimizar costos, seguridad, monitoreo y continuidad.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Imagen de Proceso -->
-            <div class="dashboard-card">
-                <h2><i class="fa-solid fa-image"></i> Flujo de Trabajo</h2>
-                <div class="img-container">
-                    <img src="img/img2.png" alt="Proceso de Desarrollo" class="project-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'cert-placeholder\'><i class=\'fa-solid fa-image\'></i><p>Coloca aquí la imagen del proceso (img/img2.png)</p></div>';">
-                </div>
-            </div>
-        </section>
-
-        <!-- PÁGINA: Planes -->
+        <!-- PÁGINA: Presupuesto -->
         <section id="presupuesto" class="page">
             <div class="page-header">
-                <h2><i class="fa-solid fa-tags"></i> Presupuesto y Planes de Servicio</h2>
+                <h2><i class="fa-solid fa-calculator"></i> Presupuesto y Planes de Servicio</h2>
                 <p class="section-desc">Bolsa de horas para puesta en marcha, soporte, consultoría y capacitaciones.</p>
             </div>
 
@@ -343,32 +318,25 @@
             <div class="dashboard-card">
                 <h2><i class="fa-solid fa-paper-plane"></i> Contáctenos</h2>
                 <div class="contact-grid">
-                    <a href="mailto:contacto@ingetet.com" class="contact-item">
+                    <a href="mailto:jsalas@fesatech.com" class="contact-item">
                         <i class="fa-solid fa-envelope"></i>
                         <div>
                             <strong>Correo electrónico</strong>
-                            <span>contacto@ingetet.com</span>
+                            <span>jsalas@fesatech.com</span>
                         </div>
                     </a>
-                    <a href="https://www.ingetet.com" target="_blank" class="contact-item">
+                    <a href="https://www.fesatech.com" target="_blank" class="contact-item">
                         <i class="fa-solid fa-globe"></i>
                         <div>
                             <strong>Sitio web</strong>
-                            <span>www.ingetet.com</span>
+                            <span>www.fesatech.com</span>
                         </div>
                     </a>
-                    <a href="tel:+573161772997" class="contact-item">
+                    <a href="tel:+573135310180" class="contact-item">
                         <i class="fa-solid fa-phone"></i>
                         <div>
                             <strong>Teléfono</strong>
-                            <span>+573161772997</span>
-                        </div>
-                    </a>
-                    <a href="https://wa.me/573161772997" target="_blank" class="contact-item whatsapp-contact">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <div>
-                            <strong>WhatsApp</strong>
-                            <span>+573161772997</span>
+                            <span>+57 313 531 0180</span>
                         </div>
                     </a>
                 </div>
