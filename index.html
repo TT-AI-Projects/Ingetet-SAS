@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingetet SAS | Propuesta Azure - Junio 2026</title>
+    <meta name="description" content="Propuesta de Modernización de Infraestructura Azure para Ingetet SAS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <!-- Partículas de fondo animadas -->
+    <div class="particles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Navegación Lateral -->
+<nav class="sidebar">
+    <div class="logo">
+        <img src="img/logo-ingetet.png" alt="Logo Ingetet SAS" onerror="this.style.display='none'; this.parentElement.innerHTML='<h2 style=\'color:var(--primary-green);font-size:1.5rem;\'>Ingetet SAS</h2>';">
+    </div>
+    
+    <ul class="nav-links">
+        <li><a href="#" data-page="inicio" class="active"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
+        <li><a href="#" data-page="objetivo"><i class="fa-solid fa-bullseye"></i> <span>Objetivo</span></a></li>
+        <li><a href="#" data-page="alcance"><i class="fa-solid fa-cloud"></i> <span>Alcance</span></a></li>
+        <li><a href="#" data-page="presupuesto"><i class="fa-solid fa-calculator"></i> <span>Presupuesto</span></a></li>
+        <li><a href="#" data-page="condiciones"><i class="fa-solid fa-file-contract"></i> <span>Condiciones</span></a></li>
+        <li><a href="#" data-page="contacto"><i class="fa-solid fa-envelope"></i> <span>Contacto</span></a></li>
+    </ul>
+    
+    <div class="sidebar-footer">
+        <a href="https://wa.me/573161772997" target="_blank" class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </div>
+</nav>
+
+    <!-- Botón menú móvil -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        
+        <!-- PÁGINA: Inicio -->
+        <section id="inicio" class="page active">
+            <div class="dashboard-card hero-section">
+                <div class="hero-content">
+                    <span class="badge">Propuesta Junio 2026</span>
+                    <h1>Infraestructura Azure <span class="text-green">Poderosa, Segura y Escalable</span></h1>
+                    <p>Modernización de Infraestructura de Aplicaciones y Datos para <strong>Ingetet SAS</strong>. Transformamos la complejidad de la nube en soluciones robustas y seguras.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn-primary" data-page="alcance">Ver Alcance <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn-secondary" data-page="contacto">Contáctanos</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="rocket-container">
+                        <i class="fa-solid fa-cloud-arrow-up rocket"></i>
+                        <div class="rocket-flame"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjetas rápidas de acceso -->
+            <div class="quick-access-grid">
+                <a href="#" class="dashboard-card quick-card" data-page="alcance">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Alcance Técnico</h3>
+                    <p>Arquitectura moderna en Azure</p>
+                </a>
+                <a href="#" class="dashboard-card quick-card" data-page="proceso">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3>Proceso</h3>
+                    <p>5 pasos de implementación</p>
+                </a>
+                <a href="#" class="dashboard-card quick-card" data-page="planes">
+                    <i class="fa-solid fa-tags"></i>
+                    <h3>Planes</h3>
+                    <p>Servicios recurrentes</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- PÁGINA: Objetivo -->
+        <section id="objetivo" class="page">
+            <div class="dashboard-card">
+                <h2><i class="fa-solid fa-bullseye"></i> Objetivo del Proyecto</h2>
+                <p class="section-desc">Actualizar y optimizar el servidor de aplicaciones migrando de Windows Server 2012 a Windows Server 2025, eliminando brechas de seguridad y mejorando el rendimiento.</p>
+                <div class="what-we-do-grid">
+                    <div class="wwd-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Seguridad</h3>
+                        <p>Eliminar brechas de seguridad con Windows Server 2025.</p>
+                    </div>
+                    <div class="wwd-item">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <h3>Rendimiento</h3>
+                        <p>Mejorar el rendimiento de las aplicaciones corporativas.</p>
+                    </div>
+                    <div class="wwd-item">
+                        <i class="fa-solid fa-expand"></i>
+                        <h3>Escalabilidad</h3>
+                        <p>Implementar arquitectura moderna IaaS y PaaS para alta disponibilidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <h2><i class="fa-solid fa-building"></i> Sobre Ingetet SAS</h2>
+                <p class="section-desc">Esta propuesta está dirigida a Ingetet SAS para garantizar un entorno robusto, seguro y gestionable para el despliegue de aplicaciones y servicios corporativos, alineado con buenas prácticas de ciberseguridad y operación continua.</p>
+            </div>
+        </section>
+
+        <!-- PÁGINA: Alcance Técnico -->
+        <section id="alcance" class="page">
+            <div class="page-header">
+                <h2><i class="fa-solid fa-cloud"></i> Alcance Técnico</h2>
+                <p class="section-desc">Arquitectura moderna para garantizar escalabilidad y alta disponibilidad.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Tarjeta: Infraestructura de Cómputo -->
+                <div class="dashboard-card service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80');">
+                        <div class="service-image-overlay"></div>
+                    </div>
+                    <div class="card-header">
+                        <i class="fa-solid fa-server icon-green"></i>
+                        <h3>Infraestructura de Cómputo</h3>
+                    </div>
+                    <p>App Server con Azure Virtual Machines para aplicaciones empresariales.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Servicio:</strong> Azure Virtual Machines (Serie D o E)</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>OS Destino:</strong> Windows Server 2022/2025</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Soporte:</strong> Extendido y seguridad avanzada</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Método:</strong> Re-provisionamiento (Clean install)</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta: Opción A IaaS -->
+                <div class="dashboard-card service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80');">
+                        <div class="service-image-overlay"></div>
+                    </div>
+                    <div class="card-header">
+                        <i class="fa-solid fa-database icon-green"></i>
+                        <h3>Capa de Datos - Opción A (IaaS)</h3>
+                    </div>
+                    <p>SQL Server on Azure VM con control total del sistema operativo.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Servicio:</strong> SQL Server on Azure VM</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Control total</strong> del Sistema Operativo</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Configuración</strong> personalizada de base de datos</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Ideal para:</strong> Cargas de trabajo tradicionales</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta: Opción B PaaS -->
+                <div class="dashboard-card service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80');">
+                        <div class="service-image-overlay"></div>
+                    </div>
+                    <div class="card-header">
+                        <i class="fa-solid fa-cloud icon-green"></i>
+                        <h3>Capa de Datos - Opción B (PaaS)</h3>
+                    </div>
+                    <p>Azure SQL Database como servicio administrado con máxima escalabilidad.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Servicio:</strong> Azure SQL Database</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Servicio administrado</strong> por Microsoft</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Modelos:</strong> Serverless o Provisioned</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Escalabilidad</strong> automática y alta disponibilidad</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Imagen de Arquitectura -->
+            <div class="dashboard-card">
+                <h2><i class="fa-solid fa-sitemap"></i> Arquitectura de Referencia</h2>
+                <p class="section-desc">Solución basada en servicios de Microsoft Azure que garantiza un entorno robusto, seguro y gestionable.</p>
+                <div class="img-container">
+                    <img src="img/img1.png" alt="Arquitectura de Referencia Azure" class="project-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'cert-placeholder\'><i class=\'fa-solid fa-sitemap\'></i><p>Coloca aquí la imagen de arquitectura (img/img1.png)</p></div>';">
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA: Proceso -->
+        <section id="proceso" class="page">
+            <div class="page-header">
+                <h2><i class="fa-solid fa-diagram-project"></i> Proceso de Desarrollo en Microsoft Azure</h2>
+                <p class="section-desc">Metodología de 5 pasos para garantizar el éxito del proyecto.</p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                        <h3>Descripción</h3>
+                        <p>Se realiza toda la contextualización del requerimiento y la descripción del proyecto.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon"><i class="fa-solid fa-calculator"></i></div>
+                        <h3>Costos Cloud</h3>
+                        <p>Descripción de los recursos en nube necesarios y los costos mensuales de los mismos.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>Solución</h3>
+                        <p>Se plantea una solución a partir de la descripción, utilizando servicios cloud o soluciones híbridas.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">04</div>
+                        <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Despliegue Inicial</h3>
+                        <p>Oferta de servicios profesionales para puesta en marcha en bolsas de horas.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">05</div>
+                        <div class="step-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Mejora Continua</h3>
+                        <p>Seguimiento mensual para optimizar costos, seguridad, monitoreo y continuidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen de Proceso -->
+            <div class="dashboard-card">
+                <h2><i class="fa-solid fa-image"></i> Flujo de Trabajo</h2>
+                <div class="img-container">
+                    <img src="img/img2.png" alt="Proceso de Desarrollo" class="project-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'cert-placeholder\'><i class=\'fa-solid fa-image\'></i><p>Coloca aquí la imagen del proceso (img/img2.png)</p></div>';">
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA: Planes -->
+        <section id="presupuesto" class="page">
+            <div class="page-header">
+                <h2><i class="fa-solid fa-tags"></i> Presupuesto y Planes de Servicio</h2>
+                <p class="section-desc">Bolsa de horas para puesta en marcha, soporte, consultoría y capacitaciones.</p>
+            </div>
+
+            <div class="dashboard-card">
+                <p class="section-desc">Se propone una bolsa de horas en modalidad mensual que permita hacer seguimiento durante todo el desarrollo del proyecto, optimizar sobre la marcha y garantizar que la solución funcione de manera óptima.</p>
+                <p class="section-desc"><strong>Nota:</strong> Se debe realizar pago mes anticipado, tanto del valor de las licencias como el valor de los servicios profesionales.</p>
+            </div>
+
+            <div class="dashboard-card pricing-card">
+                <div class="pricing-header">
+                    <i class="fa-solid fa-crown"></i>
+                    <h3>Plan de Servicio ERP (Odoo)</h3>
+                </div>
+                <div class="pricing-price">
+                    <span class="price-amount">$2.5M</span>
+                    <span class="price-currency">COP + IVA / mensual</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> Bolsa de horas con pago mensual</li>
+                    <li><i class="fa-solid fa-check"></i> Compromiso a 6 meses (10 horas mensuales, 60 totales)</li>
+                    <li><i class="fa-solid fa-check"></i> Hora adicional: $230K COP + IVA</li>
+                    <li><i class="fa-solid fa-check"></i> Seguimiento y optimización continua</li>
+                    <li><i class="fa-solid fa-check"></i> Puesta en marcha, despliegue y soporte</li>
+                    <li><i class="fa-solid fa-check"></i> Consultoría y capacitaciones incluidas</li>
+                </ul>
+                <p class="pricing-note">* Pago mes anticipado de licencias y servicios profesionales.</p>
+            </div>
+        </section>
+
+        <!-- PÁGINA: Condiciones -->
+        <section id="condiciones" class="page">
+            <div class="page-header">
+                <h2><i class="fa-solid fa-file-contract"></i> Condiciones Comerciales</h2>
+                <p class="section-desc">Términos y condiciones para la ejecución del proyecto.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-clock icon-green"></i>
+                        <h3>Validez y Confidencialidad</h3>
+                    </div>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Validez de <strong>30 días</strong> a partir de la fecha de entrega.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Oferta de carácter <strong>confidencial</strong>.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Estimado inicial en horas puede tener cambios según disponibilidad.</li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-money-bill-wave icon-green"></i>
+                        <h3>Costos e Impuestos</h3>
+                    </div>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Valores de Azure son de referencia y pueden variar.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Cloud computing excluido de IVA</strong> (Art. 476 ET).</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Servicios profesionales aplican IVA vigente.</li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-credit-card icon-green"></i>
+                        <h3>Forma de Pago</h3>
+                    </div>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Despliegue:</strong> 50% al inicio, 50% a conformidad.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> <strong>Bolsas de horas:</strong> 100% anticipado en los primeros 30 días.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Servicios profesionales 100% remotos.</li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-shield-halved icon-green"></i>
+                        <h3>Disponibilidad y Responsabilidades</h3>
+                    </div>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Disponibilidad comprometida: <strong>99.5%</strong>.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Administración de suscripciones es responsabilidad del usuario final.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> No se ejecutarán actividades fuera del alcance.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA: Contacto -->
+        <section id="contacto" class="page">
+            <div class="dashboard-card">
+                <h2><i class="fa-solid fa-paper-plane"></i> Contáctenos</h2>
+                <div class="contact-grid">
+                    <a href="mailto:contacto@ingetet.com" class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Correo electrónico</strong>
+                            <span>contacto@ingetet.com</span>
+                        </div>
+                    </a>
+                    <a href="https://www.ingetet.com" target="_blank" class="contact-item">
+                        <i class="fa-solid fa-globe"></i>
+                        <div>
+                            <strong>Sitio web</strong>
+                            <span>www.ingetet.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+573161772997" class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Teléfono</strong>
+                            <span>+573161772997</span>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/573161772997" target="_blank" class="contact-item whatsapp-contact">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <span>+573161772997</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Ingetet SAS. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+
+    <script src="project.js"></script>
+</body>
+</html>
